@@ -16,6 +16,7 @@ export class DbzService {
     ]
 
     get personajes(): Personaje[] {
+        // Se hace esto como buena practica ya que se devuelve un nuevo arreglo usando el operador Spread
         return [... this._personajes];
     }
     constructor() {}
